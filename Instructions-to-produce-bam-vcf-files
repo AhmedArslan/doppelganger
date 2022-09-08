@@ -45,11 +45,4 @@ Instructions to produce input files:
     Command: awk '{print ">"$1":"$2"-"$3"_"$4"_"$5"_"$6}' HiFiCCS.filter.INS.bed > HiFiCCS.bed
     
         A - HiFiCCS.fa, HiFiCCS.bed and HiFiCCS.sorted.bam are the final input files to run doppelganger. 
-    
-    
-    
-    
-    
-    
-    
-    
+        
