@@ -21,6 +21,7 @@ Instructions to produce input files:
     Convert sam to bam file format:
     Command: samtools view -Sb HiFiCCS.sam -@ 10 > HiFiCCS.bam 
       A - change -@ to increase or decrease number of threads.
+    
     Sort bam file:
     Command: samtools sort -o HiFiCCS.sorted.bam -O bam -@ 10 HiFiCCS.bam 
     Index sorted bam file:
