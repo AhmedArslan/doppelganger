@@ -10,8 +10,11 @@ Instructions to produce input files:
   
   
 1 - Generating (sorted) BAM file:
+    
     [minimap2](https://github.com/lh3/minimap2)
+    
     [samtools](http://www.htslib.org/)
+    
     [reference](https://www.ncbi.nlm.nih.gov/grc/human) 
 
     Alignment:
@@ -32,7 +35,9 @@ Instructions to produce input files:
   
   
 2 - Generating bed and fasta from bed file
+    
     [Sniffles](https://github.com/fritzsedlazeck/Sniffles)
+    
     [bcftools](https://samtools.github.io/bcftools/howtos/install.html)
     
     Step - Insertion variant calling:
@@ -51,5 +56,6 @@ Instructions to produce input files:
     
         A - HiFiCCS.fa, HiFiCCS.bed and HiFiCCS.sorted.bam are the input files for doppelganger. 
         
-Remove extra files:
+
+Remove extra/tmp files:
     rm HiFiCCS.sam HiFiCCS.bam HiFiCCS.sorted.vcf HiFiCCS.filter.bed HiFiCCS.filter.INS.bed HiFiCCS.filter.vcf
