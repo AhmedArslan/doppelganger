@@ -10,8 +10,7 @@ Instructions to produce input files:
   
   
 1 - Generating (sorted) BAM file:
-    
-    Softwares needed:[minimap2](https://github.com/lh3/minimap2),[samtools](http://www.htslib.org/),[reference](https://www.ncbi.nlm.nih.gov/grc/human) 
+    Softwares/data needed:[minimap2](https://github.com/lh3/minimap2),[samtools](http://www.htslib.org/),[reference](https://www.ncbi.nlm.nih.gov/grc/human) 
 
     Alignment:
     Command: minimap2 -ax map-hifi -MD GRCh38_genomic.fa HiFiCCS.fastq.gz > HiFiCCS.sam -t 10
@@ -31,7 +30,6 @@ Instructions to produce input files:
   
   
 2 - Generating bed and fasta from bed file
-    
     Softwares needed:[Sniffles](https://github.com/fritzsedlazeck/Sniffles), [bcftools](https://samtools.github.io/bcftools/howtos/install.html)
     
     Step - Insertion variant calling:
