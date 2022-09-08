@@ -1,3 +1,4 @@
+
 Instructions to produce input files:
   
   1 - bam file (sorted)
@@ -44,5 +45,5 @@ Instructions to produce input files:
     Command: awk '{print ">"$1":"$2"-"$3"_"$4"_"$5"_"$6"\n"$8}' HiFiCCS.filter.INS.bed > HiFiCCS.fa
     Command: awk '{print ">"$1":"$2"-"$3"_"$4"_"$5"_"$6}' HiFiCCS.filter.INS.bed > HiFiCCS.bed
     
-        A - HiFiCCS.fa, HiFiCCS.bed and HiFiCCS.sorted.bam are the final input files to run doppelganger. 
+        A - HiFiCCS.fa, HiFiCCS.bed and HiFiCCS.sorted.bam are the input files for doppelganger. 
         
