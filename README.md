@@ -2,7 +2,7 @@
 Target site duplication assessment from alignment file and genomic location of insertion sites. 
 
 
-Instructions to produce input files:
+  Instructions to generat input files:
   
   1 - bam file (sorted)
   2 - bed file (containing insertion locations)
