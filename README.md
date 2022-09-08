@@ -5,14 +5,14 @@ Target site duplication assessment from alignment file and genomic location of i
   # Instructions to generate input files:
     There are two ways to generate input files.
     1 - Follow the instructions written below - or
-    2 - run the files.sh with the raw files
+    2 - run the files.sh with the raw files (TODO)
     
     Three files are needed:  
     1 - bam file (sorted)
     2 - bed file (containing insertion locations)
     3 - fasta file (containing insertion sequences)
   
-    Step - 1 - Generating (sorted) BAM file:
+   Step - 1 - Generating (sorted) BAM file:
     Softwares/data needed: [minimap2](https://github.com/lh3/minimap2), [samtools](http://www.htslib.org/), [reference](https://www.ncbi.nlm.nih.gov/grc/human) 
 
     Alignment:
@@ -32,7 +32,7 @@ Target site duplication assessment from alignment file and genomic location of i
     Command: samtools index HiFiCCS.sorted.bam
   
   
-    Step - 2 - Generating bed and fasta from bed file
+   Step - 2 - Generating bed and fasta from bed file:
     Softwares needed: [Sniffles](https://github.com/fritzsedlazeck/Sniffles), [bcftools](https://samtools.github.io/bcftools/howtos/install.html)
     
     Step - Insertion variant calling:
