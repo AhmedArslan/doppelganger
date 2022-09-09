@@ -55,4 +55,5 @@ Target site duplication assessment from alignment file and genomic location of i
      
   
   * Remove extra/tmp files:
+  
     rm HiFiCCS.sam HiFiCCS.bam HiFiCCS.sorted.vcf HiFiCCS.filter.bed HiFiCCS.filter.INS.bed HiFiCCS.filter.vcf
