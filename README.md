@@ -50,7 +50,7 @@ Target site duplication assessment from alignment file and genomic location of i
     Command: awk '{print ">"$1":"$2"-"$3"_"$4"_"$5"_"$6"\n"$8}' HiFiCCS.filter.INS.bed > HiFiCCS.fa
     Command: awk '{print ">"$1":"$2"-"$3"_"$4"_"$5"_"$6}' HiFiCCS.filter.INS.bed > HiFiCCS.bed
     
-        A - HiFiCCS.fa, HiFiCCS.bed and HiFiCCS.sorted.bam are the input files for doppelganger. 
+        * HiFiCCS.fa, HiFiCCS.bed and HiFiCCS.sorted.bam are the input files for doppelganger. 
      
      
   
