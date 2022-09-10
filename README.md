@@ -59,7 +59,7 @@ Target site duplication assessment from alignment file and genomic location of i
   
      rm HiFiCCS.sam HiFiCCS.bam HiFiCCS.sorted.vcf HiFiCCS.filter.bed HiFiCCS.filter.INS.bed HiFiCCS.filter.vcf
      
-# 2 - run the preprocessor.sh to automate files generate
+# 2 - run the preprocessor.sh to automate files generation
   * conda env create --file doppelganger.yaml
   * preprocessor.sh [fastq] [barcode.fa] [threads] [out_name] [reference]
     
