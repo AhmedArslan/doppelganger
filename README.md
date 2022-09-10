@@ -13,7 +13,7 @@ Target site duplication assessment from alignment file and genomic location of i
     2 - bed file (containing insertion locations)
     3 - fasta file (containing insertion sequences)
   
-  # 1 - Follow the steps individually 
+  # 1 - follow individual steps
    * Step - 1 - Generating (sorted) BAM file:
     Softwares/data needed: [minimap2](https://github.com/lh3/minimap2), [samtools](http://www.htslib.org/), [reference](https://www.ncbi.nlm.nih.gov/grc/human) 
 
