@@ -7,12 +7,15 @@ Target site duplication assessment from alignment file and genomic location of i
   * There are two ways to generate input files.
     
     1 - Follow the steps individually - or
+    
     2 - run the preprocessor.sh to automate files generate (Recommended)
     
   * Three files are needed:  
     
     1 - bam file (sorted)
+    
     2 - bed file (containing insertion locations)
+    
     3 - fasta file (containing insertion sequences)
   
   # 1 - follow individual steps
