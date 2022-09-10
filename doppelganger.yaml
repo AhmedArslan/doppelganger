@@ -1,0 +1,19 @@
+name: doppelganger
+channels:
+  - conda-forge
+  - defaults
+  - bioconda
+dependencies:
+    - python=3.8
+    - lima
+    - ccs
+    - pdindex
+    - bam2fastq
+    - minimap2
+    - samtools
+    - sniffles
+    - bcftools
+    - blast
+    - biopython
+
+# conda env create --file doppelganger.yaml
