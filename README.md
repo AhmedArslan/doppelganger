@@ -8,7 +8,7 @@ Target site duplication assessment from alignment file and genomic location of i
     
     1 - follow individual steps - OR
     
-    2 - run the preprocessor.sh to automate files generate (Recommended)
+    2 - run the preprocessor.sh to automate files generation (Recommended)
     
   * Three files are needed:  
     
