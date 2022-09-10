@@ -5,14 +5,15 @@ Target site duplication assessment from alignment file and genomic location of i
   # Instructions to generate input files:
     
     There are two ways to generate input files.
-    1 - Follow the instructions written below - or
-    2 - run the files.sh with the raw files (TODO)
+    1 - Follow the steps individually - or
+    2 - run the preprocessor.sh to automate files generate (Recommended)
     
     Three files are needed:  
     1 - bam file (sorted)
     2 - bed file (containing insertion locations)
     3 - fasta file (containing insertion sequences)
   
+  # 1 - Follow the steps individually 
    * Step - 1 - Generating (sorted) BAM file:
     Softwares/data needed: [minimap2](https://github.com/lh3/minimap2), [samtools](http://www.htslib.org/), [reference](https://www.ncbi.nlm.nih.gov/grc/human) 
 
@@ -57,3 +58,9 @@ Target site duplication assessment from alignment file and genomic location of i
   * Remove extra/tmp files:
   
      rm HiFiCCS.sam HiFiCCS.bam HiFiCCS.sorted.vcf HiFiCCS.filter.bed HiFiCCS.filter.INS.bed HiFiCCS.filter.vcf
+     
+# 2 - run the preprocessor.sh to automate files generate
+  * conda env create --file doppelganger.yaml
+  * preprocessor.sh [fastq] [barcode.fa] [threads] [out_name] [reference]
+    
+      details: fastq = raw long-reads file [fastq/fq] ; barcode.fa = pacbio barcode [fa]; out_name = name of output file; reference = refernece genome [fa] 
