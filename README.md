@@ -69,3 +69,7 @@ Target site duplication assessment from alignment file and genomic location of i
   * preprocessor.sh [fastq] [barcode.fa] [threads] [out_name] [reference]
     
       details: fastq = raw long-reads file [fastq/fq] ; barcode.fa = pacbio barcode [fa]; out_name = name of output file; reference = refernece genome [fa] 
+      
+# run doppelganger
+  * activate doppelganger
+  * python3 doppelganger.py --bam [bam file] --bed [bed file] --out [output name] --region [bp] --org [human or mouse] --fasta [insertion sequences.fa]
