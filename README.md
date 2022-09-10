@@ -6,7 +6,7 @@ Target site duplication assessment from alignment file and genomic location of i
     
   * There are two ways to generate input files.
     
-    1 - Follow the steps individually - or
+    1 - follow individual steps - OR
     
     2 - run the preprocessor.sh to automate files generate (Recommended)
     
