@@ -23,7 +23,7 @@ Target site duplication assessment from alignment file and genomic location of i
     Softwares/data needed: [minimap2](https://github.com/lh3/minimap2), [samtools](http://www.htslib.org/), [reference](https://www.ncbi.nlm.nih.gov/grc/human) 
 
     Alignment:
-    Command: minimap2 -ax map-hifi -MD GRCh38_genomic.fa HiFiCCS.fastq.gz > HiFiCCS.sam -t 10
+    Command: minimap2 -ax map-hifi -MD GRCh38_genomic.fa raw.fastq.gz > HiFiCCS.sam -t 10
 
       A - change map-hifi to map-ont, if using nanopore reads.
       B - change -t to increase or decrease number of threads. 
