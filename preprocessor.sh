@@ -23,7 +23,7 @@ bam2fastq -o $out $out'.ccs.bam'
 echo "starting double alignment with vulcan... "
 minimap2 -ax map-hifi -MD $reference $out'.fastq.gz' > $out'.sam' -t $threads
 echo "alignment is done... "
-samtools view -S -b $out'.sam' > $out'.bam' 
+samtools view -S -b $out'.sam' -@ $threads > $out'.bam' 
 samtools sort -o $out'.sorted.bam' -O bam -@ $threads $out'.bam'
 samtools index $out'.sorted.bam' 
 echo "starting structural variant calling... "
