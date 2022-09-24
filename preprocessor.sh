@@ -32,7 +32,7 @@ echo "postprocessing vcf..."
 bcftools view -i 'GT="alt"' -f PASS -c 1 $out'.vcf'  -o $out'.filter.vcf' 
 bcftools query -f "%CHROM\t%POS\t%INFO/END\t%INFO/SVTYPE\t%INFO/SVLEN\t%REF\t%ALT\t%STRAND\n" $out'.filter.vcf' > $out'.filter.strand.bed' 
 grep 'INS' $out'.filter.strand.bed' | grep -v 'GL\|JH' > $out'.filter.strand.INS.bed' 
-awk '{print ">"$1":"$2"-"$3"_"$4"_"$5"_"$6"\n"$8}' $out'.filter.strand.INS.bed' > $out'.fa'
+awk '{print ">"$1":"$2"-"$3"_"$4"_"$5"\n"$7}' $out'.filter.strand.INS.bed' > $out'.fa'
 awk '{print $1"\t"$2"\t"$3+$5 }' $out'.filter.strand.INS.bed' > $out'.bed'
 rm $out'.filter.strand.INS.bed' $out'.filter.strand.bed' $out'.bam' $out'.filter.vcf' 
 echo 'data files for doppelganger are ready... '
