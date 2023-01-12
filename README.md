@@ -68,7 +68,7 @@ Target site duplication assessment from alignment file and genomic location of i
   * conda env create --file doppelganger.yaml
   * preprocessor.sh [fastq] [barcode.fa] [threads] [out_name] [reference]
     
-      details: fastq = raw long-reads file [fastq/fq] ; barcode.fa = pacbio barcode [fa]; out_name = name of output file; reference = refernece genome [fa] 
+      fastq = raw long-reads file [fastq/fq] ; barcode.fa = pacbio barcode [fa]; out_name = name of output file; reference = refernece genome [fa] 
       
 # run doppelganger
   * conda env create --file doppelganger.yaml [run first time only]
