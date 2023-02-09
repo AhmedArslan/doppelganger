@@ -57,13 +57,9 @@ Target site duplication assessment from alignment file and genomic location of i
     Command: awk '{print ">"$1":"$2"-"$3"_"$4"_"$5"_"$6}' HiFiCCS.filter.INS.bed > HiFiCCS.bed
     
         * HiFiCCS.fa, HiFiCCS.bed and HiFiCCS.sorted.bam are the input files for doppelganger. 
-     
-     
   
-  * Remove extra/tmp files:
+    Remove extra/tmp files: rm HiFiCCS.sam HiFiCCS.bam HiFiCCS.sorted.vcf HiFiCCS.filter.bed HiFiCCS.filter.INS.bed HiFiCCS.filter.vcf
   
-     rm HiFiCCS.sam HiFiCCS.bam HiFiCCS.sorted.vcf HiFiCCS.filter.bed HiFiCCS.filter.INS.bed HiFiCCS.filter.vcf
-     
 # 2 - run the preprocessor.sh to automate files generation
   * conda env create --file doppelganger.yaml
   * preprocessor.sh [fastq] [barcode.fa] [threads] [out_name] [reference]
