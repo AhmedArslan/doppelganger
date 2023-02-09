@@ -69,4 +69,4 @@ Target site duplication assessment from alignment file and genomic location of i
 # run doppelganger
   * conda env create --file doppelganger.yaml [run first time only]
   * activate doppelganger
-  * python3 doppelganger.py --bam [bam file] --bed [bed file] --out [output name] --region [region aroung insertion] --org [human or mouse] --fasta [insertion sequences.fa] --threads [number of threads]
+  * python3 doppelganger.py --bam [bam file] --bed [bed file] --out [output name] --region [region around insertion] --org [human or mouse] --fasta [insertion sequences.fa] --threads [number of threads]
