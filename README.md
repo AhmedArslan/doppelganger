@@ -53,7 +53,7 @@ Target site duplication assessment from alignment file and genomic location of i
     Command: bcftools view -i 'GT="alt"' -f PASS -c 1 HiFiCCS.sorted.vcf -o HiFiCCS.filter.vcf
     Command: bcftools query -f '%CHROM\t%POS\t%INFO/END\t%INFO/SVTYPE\t%INFO/SVLEN\t%REF\t%ALT\t%STRAND\n' HiFiCCS.filter.vcf > HiFiCCS.filter.bed
     Command: grep 'INS' HiFiCCS.filter.bed > HiFiCCS.filter.INS.bed
-    Command: awk '{print ">"$1":"$2"-"$3"_"$4"_"$5"\n"$7}' HiFiCCS.filter.INS.bed > HiFiCCS.fa
+    Command: awk '{print ">"$1":"$2"-"$3"_"$5"\n"$7}' HiFiCCS.filter.INS.bed > HiFiCCS.fa
     Command: awk '{print ">"$1":"$2"-"$3"_"$4"_"$5}' HiFiCCS.filter.INS.bed | awk -F'[->_:]' '{print $2"\t"$3"\t"$3+$6}' | sort -k 1,1 -k2,2n > HiFiCCS.bed
     
         * HiFiCCS.fa, HiFiCCS.bed and HiFiCCS.sorted.bam are the input files for doppelganger. 
