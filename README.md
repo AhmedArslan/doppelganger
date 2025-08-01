@@ -1,5 +1,5 @@
 # doppelganger
-Target site duplication assessment from alignment file and genomic location of somatic insertion sites. 
+Target site duplication assessment from second and third generation alignment file and genomic location of somatic insertion sites. 
 
 
   ## Instructions to generate input files:
